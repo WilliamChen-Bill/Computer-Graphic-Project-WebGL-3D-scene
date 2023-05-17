@@ -1,19 +1,35 @@
-# Computer-Graphic-Project-WebGL-3D-scene
-## Synopsis
-* In this project, it uses WebGL to create a 3-dimensional scene, with your own shaders, models,and associated data (vertex attributes, colors, normals, textures, etc).
-## Learning Objectives
-* To familiarize yourselves with the complexities of using the WebGL API and the GLSL shading language to craft a 3-dimensional scene. This includes defining vertex attributes, dispatching them to the GPU and using them within shaders, using vertex colors, normals and texture coordinates (when applicable). Also, using textures to create a more rich appearance, if desired(optional)
-## Description
-* The task will be to create a 3D scene, visualized using the WebGL drawing API. When authoring such three-dimensional visualizations, it will be your responsibility to do the following, among others(while online tools like shdr.bkcore.com would do many of these things for you):
-* Write your own vertex shader and fragment shader; a relatively clean and straight forward way to do this would be to include them in the body of `<script>` blocks in the HTML code, as we saw in the examples above.You could, in fact, write more than a single pair of fragment/vertex shaders, if you chose to, if you have several objects, each of which requires a different shader.
-* You should compile and link the two shaders into a “program”, as we saw in our examples. You can create more than one “program”, if you wish to use a different shader routine for different objects you are drawing.
-* You should define your own vertex attributes, and uniform variables as we saw in our examples. This involves keeping pointers to attribute/uniform variables by querying the linked program (as we saw in our examples), and also defining the data associated with vertex attributes (and uniforms), dispatching that data to the GPU, and taking any other necessary operations to do the drawing.
-* You should define the geometry of the model(s) being used, by providing a indexed set of vertices  that make up triangles. This should also be buffered to the GPU as we saw in class, and used in a `drawElements()` call inside the draw loop.
-* You should create all necessary transforms that the shaders might need, and dispatch those to the GPU (typically, as “uniforms”).
-* You should use the Z-buffer visibility mechanism to leverage the GPU’s capability for performing visibility queries.
-* **[This is only optional! We will have one more assignment where this will be the focus, you don't have to use textures in this one]** You could choose load texture images (if you chose to include texture mapping in your implementation), and furnish texture coordinates for your models.
-* Your scene should include at least one “polyhedral” object with multiple shaded (as opposed to be drawn as “wireframe”, only by their edges) polygonal facets. Those will be typically be comprised of triangles. Your entire object cannot be all flat! (unless if you include several objects in your world, in which case it’s ok for at least one of them to not be flat). We would like to be able to visually appreciate that the Z-buffer visibility algorithm is actually working ... “front facing” triangles/polygons, should hide parts of the objects that are located behind them.
-* You include diffuse and/or specular shading in your objects (ideally both). It will not be acceptable to have the entire polygonal object (or objects) show up as a single color, without any variation due to lighting. It is perfectly fine to use vertex colors to customize the coloration of different parts of the model.
-* We would like to see you use at least three different vertex attributes in your shader. Those could be, for example position/color/normal, position/normal/texture-coordinates, etc. If you use more than one shader pairs in your implementation, this restriction is relaxed to: at least one of the shader pairs should use at least 2 vertex attributes.
-* There should be a way to enact some change in the scene, different than just controlling the camera position. This would typically be some modeling transform that moves some part of the scene with respect to the world coordinates, some motion along a curve, a hierarchical modeling apparatus, etc. But at the very mininum, some modeling transform should be applied (in our in-class examples, this was done by a “rotation” transform applied to the cube model).
-* There should be some way to affect the placement of the camera relative to the scene. In our examples, we have a slider that spins the camera around the scene.
+# 3D-WebGL-Scene-Creation
+## Project Overview
+This project harnesses the power of WebGL to sculpt an interactive 3-dimensional scene. It incorporates self-authored shaders, uniquely designed models, and associated data such as vertex attributes, colors, normals, textures, etc., to deliver an immersive experience.
+
+## Key Learning Outcomes
+Through this project, we can gain a deep understanding of the WebGL API and the GLSL shading language intricacies. This includes defining and dispatching vertex attributes to the GPU, utilizing vertex colors, normals and texture coordinates, and employing textures to enrich visual aesthetics (optional but encouraged).
+
+## Project Details
+This project offers a unique challenge to create a 3D scene using the WebGL drawing API. While online tools such as shdr.bkcore.com can assist in certain areas, the primary responsibility for the following tasks lies with you:
+
+- **Vertex and Fragment Shaders:** Author your own vertex and fragment shaders, ideally embedded within `<script>` blocks in the HTML code. You're encouraged to create multiple pairs of fragment/vertex shaders for different objects requiring unique shaders.
+
+- **Shader Program Compilation:** Compile and link your shaders into a "program". Feel free to create multiple "programs" if you need different shader routines for different objects.
+
+- **Vertex Attributes and Uniform Variables:** Define your own vertex attributes and uniform variables. This includes querying the linked program for attribute/uniform variables, defining associated data, dispatching it to the GPU, and executing all necessary operations for drawing.
+
+- **Model Geometry:** Define the geometry of your model(s) by providing an indexed set of vertices that form triangles. Buffer this to the GPU and use it in a `drawElements()` call within the draw loop.
+
+- **Transforms:** Create all necessary transforms for the shaders and dispatch them to the GPU, typically as "uniforms".
+
+- **Z-buffer Visibility Mechanism:** Leverage the GPU's visibility query capabilities using the Z-buffer visibility mechanism.
+
+- **Texture Images (Optional):** You can optionally choose to load texture images and provide texture coordinates for your models.
+
+- **Polyhedral Objects:** Include at least one "polyhedral" object with multiple shaded polygonal facets. This ensures that the Z-buffer visibility algorithm is effectively leveraged.
+
+- **Shading:** Implement diffuse and/or specular shading in your objects. It's unacceptable to have objects showing up as a single color without any variation due to lighting.
+
+- **Vertex Attributes:** Use at least three different vertex attributes in your shader, for instance, position/color/normal, position/normal/texture-coordinates, etc.
+
+- **Scene Dynamics:** There must be a provision to effect some change in the scene beyond just controlling the camera position. This could involve a modeling transform, motion along a curve, a hierarchical modeling structure, etc.
+
+- **Camera Placement:** Provide a mechanism to adjust the camera's position relative to the scene.
+
+This project is an exciting opportunity for you to showcase your skills and ingenuity to potential recruiters, by demonstrating your understanding of WebGL and your ability to create engaging, interactive 3D scenes.
