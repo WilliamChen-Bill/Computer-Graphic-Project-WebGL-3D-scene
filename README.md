@@ -3,7 +3,7 @@
 This project harnesses the power of WebGL to sculpt an interactive 3-dimensional scene. It incorporates self-authored shaders, uniquely designed models, and associated data such as vertex attributes, colors, normals, textures, etc., to deliver an immersive experience.
 
 ## Key Learning Outcomes
-Through this project, we can gain a deep understanding of the WebGL API and the GLSL shading language intricacies. This includes defining and dispatching vertex attributes to the GPU, utilizing vertex colors, normals and texture coordinates, and employing textures to enrich visual aesthetics (optional but encouraged).
+Through this project, we can gain a deep understanding of the WebGL API and the GLSL shading language intricacies. This includes defining and dispatching vertex attributes to the GPU, utilizing vertex colors, normals and texture coordinates, and employing textures to enrich visual aesthetics.
 
 ## Project Details
 This project offers a unique challenge to create a 3D scene using the WebGL drawing API. While online tools such as shdr.bkcore.com can assist in certain areas, the primary responsibility for the following tasks lies with you:
