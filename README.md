@@ -31,5 +31,3 @@ This project offers a unique challenge to create a 3D scene using the WebGL draw
 - **Scene Dynamics:** There must be a provision to effect some change in the scene beyond just controlling the camera position. This could involve a modeling transform, motion along a curve, a hierarchical modeling structure, etc.
 
 - **Camera Placement:** Provide a mechanism to adjust the camera's position relative to the scene.
-
-This project is an exciting opportunity for you to showcase your skills and ingenuity to potential recruiters, by demonstrating your understanding of WebGL and your ability to create engaging, interactive 3D scenes.
